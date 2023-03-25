@@ -8,7 +8,8 @@ public:
 //put the variables structures and functions we both use here.
     robot robots[4]; //四个机器人
     workbench workbenches[50];//小于等于 50 个工作台，9类工作台
-    int bench_number;
+    int money;
+    int benchnumber;
 
 /////////////////////////////////////////////////////////////
 //this is metaverse-c's workspace.
@@ -17,8 +18,7 @@ public:
     bool buy[4];
     bool sell[4];
     bool destory[4];
-
-    bool readUntilOK();
+    bool readMap();
 //第一帧到来之前初始化
     decision(); //标准输入流的输入接口用于接收标准输入
 //每帧数据到来之前初始化

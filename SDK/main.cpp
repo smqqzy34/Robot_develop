@@ -8,14 +8,17 @@ using namespace std;
 
 int main(){
     decision d; 
-    d.readUntilOK();
+    d.readMap();
     puts("OK");
     fflush(stdout);
     int frameID;
     while(scanf("%d",&frameID)!=EOF){
-        printf("%d",&frameID);
+        printf("%d\n",&frameID);
         d.setRobandWork();
         d.makeDecision();
+        d.giveRobotCommand();
         d.giveOrder();
+        printf("OK\n");
+        fflush(stdout);
     }
 }

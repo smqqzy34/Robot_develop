@@ -21,17 +21,20 @@ public:
 
 /////////////////////////////////////////////////////////////
 //this is metaverse-c's workspace.
-//command given buy decision
+//command given buy decision.
     bool buy;
     bool sell;
     bool destory;
-    int dest_work_bench;//    int workbench_id;
+
+    int dest_work_bench;//
+
 
     robot();
-    setRobot();
-    bool testIfReach();
-    void calSpeed();
-    void giveOrder();
+    ~robot();
+    void setrobot(int workbench_id,int carry_product_id,double time_value_factor,double crush_value_factor,double angle_speed,double line_speedx,double line_speedy,double direction,double current_p_x,double current_p_y);
+    bool testifreach();
+    void calspeed(double positionx,double positiony);
+    void giveorder();
 
 ///////////////////////////////////////////////////////////////////////////////////
 //This is smqqzy's workspace.
