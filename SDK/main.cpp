@@ -8,6 +8,7 @@ using namespace std;
 
 int main(){
     decision d; //将 readUnitOK 集成至 decision 中
+    d.readUntilOK();
     puts("OK");
     fflush(stdout);
     int frameID;
@@ -15,5 +16,6 @@ int main(){
         printf("%d",&frameID);
         d.setRobandWork();
         d.makeDecision();
+        d.giveOrder();
     }
 }

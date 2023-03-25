@@ -3,30 +3,53 @@
 #include <time.h>
 
 class robot{
-    struct robot{
-        int robot_id; //robot_id = 1,2,3,4
-        int project_id;
-        int workbench_id;
+public:
+////////////////////////////////////////////////////////////
+//This is common workspace.
+//put the variables and structures  we both use here.
+    int carry_product_id;
+    double time_value_factor;
+    double crush_value_factor;
 
-        double time_value_factor;
-        double crush_value_factor;
+//use to describe basic infomation
+    double line_speedx,line_speedy;//    double lineSpeed;
+    double angle_speed;
+    double direction;
+//    double angle; //[0,360]
 
-        //use to describe basic infomation
-        double lineSpeed;
-        double angleSpeed;
-        double angle; //[0,360]
+    double current_p_x,current_p_y;
 
-        double destination_x,destination_y;
-        double current_p_x,current_p_y;
-        };
+/////////////////////////////////////////////////////////////
+//this is metaverse-c's workspace.
+//command given buy decision
+    bool buy;
+    bool sell;
+    bool destory;
+    int dest_work_bench;//    int workbench_id;
 
-        int num_of_workbench();
+    bool testIfReach();
+    void calSpeed();
+    void giveOrder();
 
-        double time_to_reach();
+///////////////////////////////////////////////////////////////////////////////////
+//This is smqqzy's workspace.
+//please add your variables and functions here. 
+//If you want to add new variables which is not included in this file.you have to add new variables here.
+//if you want to add new functions.You'd better tell its input output and function clearly.
 
-        double get_lineSpeed();
+    int project_id;
+    int robot_id;
+    double destination_x,destination_y;
 
-        double get_angleSpeed();
+
+    int num_of_workbench();
+
+    double time_to_reach();
+
+    double get_lineSpeed();
+
+    double get_angleSpeed();
+
 
 
 }
