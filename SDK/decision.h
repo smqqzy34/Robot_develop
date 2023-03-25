@@ -8,6 +8,7 @@ public:
 //put the variables structures and functions we both use here.
     robot robots[4]; //四个机器人
     workbench workbenches[50];//小于等于 50 个工作台，9类工作台
+    int bench_number;
 
 /////////////////////////////////////////////////////////////
 //this is metaverse-c's workspace.

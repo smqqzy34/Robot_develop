@@ -7,7 +7,7 @@
 using namespace std;
 
 int main(){
-    decision d; //将 readUnitOK 集成至 decision 中
+    decision d; 
     d.readUntilOK();
     puts("OK");
     fflush(stdout);

@@ -5,25 +5,28 @@ enum Type{
 class workbench{
 public:
 //static infomation
-    enum Type kind;
-    int id;
-    int productID;
+    int workbench_id;//工作台编号
+    int kind;//工作台种类
+    double positionx,positiony;
+    int product_id;
+    //time needed for production
+    int timetoinish;
+    //raw material
+    int rawstatus;//input
     int rawid[3];
+    bool rawexist[3];
+
+    int product_id;
+    bool ifproductexist;
+
+    workbench();
 
 /////////////////////////////////////////////////////////////
 //this is metaverse-c's workspace.
 //dynamic infomation
-    int rawstatus;//input
-    //if raw material is ready
-    bool rawexist[3];
+
     bool calraw(int rawstatus);
-
-    bool ifproductexist;
-
-    double positionx,positiony;
-    //time needed for production
-    int timetoinish;
-
+    void setWorkbench();
 
 ///////////////////////////////////////////////////////////////////////////////////
 //This is smqqzy's workspace.

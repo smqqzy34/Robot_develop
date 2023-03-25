@@ -7,15 +7,15 @@ public:
 ////////////////////////////////////////////////////////////
 //This is common workspace.
 //put the variables and structures  we both use here.
+    int workbench_id;
     int carry_product_id;
     double time_value_factor;
     double crush_value_factor;
 
 //use to describe basic infomation
-    double line_speedx,line_speedy;//    double lineSpeed;
     double angle_speed;
+    double line_speedx,line_speedy;
     double direction;
-//    double angle; //[0,360]
 
     double current_p_x,current_p_y;
 
@@ -27,6 +27,8 @@ public:
     bool destory;
     int dest_work_bench;//    int workbench_id;
 
+    robot();
+    setRobot();
     bool testIfReach();
     void calSpeed();
     void giveOrder();

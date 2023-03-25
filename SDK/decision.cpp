@@ -6,11 +6,10 @@
 /////////////////////////////////////////////////////////////
 //this is metaverse-c's workspace.
 decision::decision(){
-    //init robots[4] and workbenches[4]
-
 
 }
 bool readUntilOK(){
+    //init robots[4] and workbenches[4]
     char line[1024];
 //    const char blank[2] = '' '';
 //    char *token;
