@@ -50,7 +50,6 @@ void robot::calspeed(double positionx, double positiony) {
 	double 	delta = angle - direction;
 	
 
-	if(fabs(delta)>)
 	double threshold_distance=0.8;
 	double kp = 0.4; 
 	if (distance < threshold_distance) {
