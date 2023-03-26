@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 enum Type{
-    Raw=1,Mid,Sell;//Raw--1,2,3;Mid--3,4,5,6,7;Sell--8,9
+    Raw=1,Mid,Sell//Raw--1,2,3;Mid--3,4,5,6,7;Sell--8,9
 };
 class workbench{
 public:

@@ -22,6 +22,7 @@ public:
 /////////////////////////////////////////////////////////////
 //this is metaverse-c's workspace.
 //command given buy decision.
+    double line_speed;
     bool buy;
     bool sell;
     bool destory;
@@ -33,6 +34,7 @@ public:
     ~robot();
     void setrobot(int workbench_id,int carry_product_id,double time_value_factor,double crush_value_factor,double angle_speed,double line_speedx,double line_speedy,double direction,double current_p_x,double current_p_y);
     bool testifreach();
+    void calangle(double positionx, double positiony);
     void calspeed(double positionx,double positiony);
     void giveorder();
 
@@ -54,7 +56,5 @@ public:
     double get_lineSpeed();
 
     double get_angleSpeed();
-
-
 
 }
